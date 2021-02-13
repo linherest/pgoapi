@@ -10,7 +10,7 @@ def parse_requirements(filename):
 
 setup_dir = os.path.dirname(os.path.realpath(__file__))
 path_req = os.path.join(setup_dir, 'requirements.txt')
-install_reqs = parse_requirements(path_req, session=False)
+install_reqs = parse_requirements(path_req)
 
 reqs = [str(ir.req) for ir in install_reqs]
 
